@@ -42,7 +42,7 @@ section#header{
     position: fixed;
     top: 0;
     z-index: 2;
-    background: rgba(22, 104, 178, 0.5);
+    background: rgba(22, 104, 178, 1);
     cursor: pointer;
 }
 h3.sd{
@@ -194,7 +194,7 @@ div.banner-info{
     color: #FFF;
     position: absolute;
     top: 12%;
-    left: 10%;
+    left: 14%;
     z-index: 1;
 }
 div.banner-info h1.title{
