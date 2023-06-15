@@ -101,35 +101,6 @@ counters.forEach((counter) => {
 });
 
 
-// let topOff = document.getElementById('counter').offsetTop;
-
-// window.onscroll = function(){
-    
-//     let winOff = window.pageYOffset;
-//     if (winOff>=(topOff+500)){
-//         const counters = document.querySelectorAll('.count-target');
-
-//         const runTime = 500;
-
-//         counters.forEach((counter) => {
-//             let start = 0;
-//             let end = Number(counter.getAttribute('data-target'));
-//             let duration = Math.floor(runTime/end);
-
-//             let display = setInterval(function(){
-//                 start +=1;
-//                 counter.innerHTML = start;
-//                 if(start >= end){
-//                     clearInterval(display);
-//                 }
-//             }, duration);
-//         });
-
-//         console.log('ok');
-//     }
-// };
-
-
 
 
 //end counter
