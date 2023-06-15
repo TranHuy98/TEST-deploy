@@ -23,7 +23,7 @@ body#wrapper{
 }
 .container{
     max-width: 1200px;
-    display: flex;
+    /* display: flex; */
 }
 
 h1{
@@ -194,7 +194,7 @@ div.banner-info{
     color: #FFF;
     position: absolute;
     top: 12%;
-    left: 14%;
+    /* left: 14%; */
     z-index: 1;
 }
 div.banner-info h1.title{
@@ -274,6 +274,7 @@ svg.banner-svg{
 
 /* intro */
 div.intro{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
