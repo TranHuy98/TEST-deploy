@@ -338,10 +338,10 @@ section#offers{
 }
 
 div.offers{
+    display: flex;
     color: #FFF;
     text-align: center;
     flex-direction: column;
-    display: flex;
     padding: 0px 0;
     justify-content: flex-start;
     align-items: center;
