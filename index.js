@@ -100,7 +100,29 @@ counters.forEach((counter) => {
     }, duration);
 });
 
-
-
-
 //end counter
+
+// mobi menu
+
+// document.getElementById('header-menu-button').onclick = () => {
+//     const menuMobi = document.getElementById('menu-mobi');
+//     if (menuMobi.style.display == 'none'){
+//         menuMobi.style.display = 'block';
+//     }
+//     else{
+//         menuMobi.style.display = 'none';
+//     }
+
+// }
+
+$('#header-menu-button').click(function(){
+    $('#menu-mobi').slideToggle();
+});
+
+
+// mobi menu
+
+
+
+
+console.log('ok');

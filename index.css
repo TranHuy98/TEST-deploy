@@ -38,6 +38,11 @@ h1{
 
 
 /* all */
+/* menu mobi */
+ul#menu-mobi{
+    display: none;
+}
+/* menu mobi */
 
 /* header */
 
@@ -72,18 +77,9 @@ header{
 }
 
 div#header-menu-button{
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(0%,-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    display: none;
 }
-div#header-menu-button i{
-    font-size: 30px;
-}
+
 
 img#header-logo{
     width: 70px;
@@ -380,6 +376,7 @@ div.service-list{
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1px;
+    padding: 0;
 }
 div#industries-tab, div#product-tab{
     display: none;
@@ -599,7 +596,7 @@ div.office-list-card:hover div.office-card-content{
 
 /* footer */
 footer{
-    padding: 30px 0;
+    padding: 30px 0 !important;
     border-top: 2px solid #CCC;
     background: #2E302F;
     color: #FFF;
@@ -657,3 +654,73 @@ div.footer-map iframe{
 }
 
 /* footer */
+
+
+
+/* responsive */
+
+@media all and (max-width:992px){
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div#header-menu-button{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    div#header-menu-button i{
+        font-size: 30px;
+    }
+    header{
+        padding: 10px 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img#header-logo{
+        width: 55px;
+    }
+    ul#header-menu{
+        display: none;
+    }
+    div.service-list{
+        padding: 0 5%;
+    }
+    footer{
+        padding: 30px 5%;
+    }
+
+    ul#menu-mobi{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #f2f2f2;
+        border: 1px solid red;
+        min-height: 500px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    @keyframes mobiMenuShow {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 100%;
+        }
+    }
+    li.menu-mobi-item{
+        list-style: none;
+        border-bottom: 2px solid blue;
+        padding: 10px 5%;
+    }
+}
+
+/* responsive */
