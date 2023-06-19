@@ -21,6 +21,10 @@ body#wrapper{
     width: 100%;
     background-color: #F2F2F2;
 }
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
 .container{
     max-width: 1200px;
     /* display: flex; */
@@ -432,6 +436,13 @@ section#portfolio{
     background-position: top 100px right 0;
     background-size: 80%;
     padding: 0 0;
+}
+section#portfolio h1{
+    margin-bottom: 0;
+}
+section#portfolio svg.top-portfolio{
+    fill: #f2f2f2;
+    margin: -10px 0 0;
 }
 div.portfolio-title{
     background: #f2f2f2;
