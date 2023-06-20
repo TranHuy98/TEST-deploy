@@ -418,6 +418,8 @@ p.service-card-more{
     font-weight: 500;
     transition: 0.6s;
     opacity: 0;
+    margin: 0;
+    color: #1668b2;;
 }
 div.service-card:hover p.service-card-more{
     opacity: 1;
@@ -494,6 +496,7 @@ div.counter-list{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 p.count-item{
     text-align: center;
@@ -532,6 +535,7 @@ div.offices-list{
     justify-content: space-around;
     align-items: flex-start;
     gap: 20px;
+    flex-wrap: wrap;
 }
 div.office-list-card{
     width: 23%;
@@ -694,32 +698,154 @@ div.footer-map iframe{
         padding: 30px 5%;
     }
 
+    /* menu mobi*/
     ul#menu-mobi{
-        display: block;
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background: #f2f2f2;
-        border: 1px solid red;
-        min-height: 500px;
+        background: #FFF;
         padding: 0;
         margin: 0;
         overflow: hidden;
+        border-bottom: 2px solid #aaa;
     }
     
-    @keyframes mobiMenuShow {
-        0%{
-            height: 0;
-        }
-        100%{
-            height: 100%;
-        }
-    }
     li.menu-mobi-item{
         list-style: none;
-        border-bottom: 2px solid blue;
+        border-bottom: 1px solid #F2F2F2;
         padding: 10px 5%;
+        position: relative;
+    }
+    ul.menu-mobi-child{
+        margin: 10px -5.5% -10px;
+        padding: 0;
+        background: #F2F2F2;
+        display: none;
+    }
+    ul.menu-mobi-child li{
+        list-style: none;
+        padding: 10px 5%;
+        border-bottom: 1px solid #ccc;
+    }
+    i.mobi-dropdown-marker{
+        position: absolute;
+        top: 12px;
+        right: 5%;
+    }
+    i.mobi-search{
+        position: absolute;
+        top: 12px;
+        right: 5%;
+    }
+    .marker-active{
+        transform: rotate(-180deg);
+    }
+    div.service-card{
+        width: 49%;
+    }
+    div.office-list-card{
+        width: 48%;
+    }
+    div#footer{
+        gap: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    div.footer-right{
+        margin: 0;
+    }
+    div.intro{
+        flex-direction: column;
+        gap: 40px;
+    }
+    div.intro div.left{
+        width: 100%;
+        text-align: center;
+        
+    }
+    div.intro div.left p{
+        margin: 30px 0;
+    }
+    div.intro div.right{
+        width: 100%;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    div.slider-item img{
+        height: 650px;
+        object-position: 0 0;
+    }
+    div.banner-info h1.title{
+        font-size: 65px;
+    }
+    svg{
+        height: 100px !important;
+    }
+
+    /* menu mobi*/
+}
+
+@media all and (max-width:768px){
+    div.service-card{
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+    }
+    p.service-card-more{
+        opacity: 1;
+    }
+    h1{
+        font-size: 35px;
+    }
+    div.banner-info h1.title{
+        font-size: 40px;
+    }
+    div.slider-item img{
+        height: 600px;
+        object-position: 0 0;
+    }
+    div.banner-info{
+        top: 75px;
+    }
+    svg{
+        height: 60px !important;
+    }
+    h1{
+        margin: 0 0 30px !important;
+    }
+}
+
+@media all and (max-width: 576px){
+    div.office-list-card{
+        width: 100%;
+    }
+    div.portfolio h2.detail{
+        font-size: 40px;
+        margin: 0 0 40px;
+    }
+    div.portfolio h2.detail span{
+        font-size: 60px;
+    }
+    section#counter button{
+        max-width: 80%;
+    }
+    div.footer-map iframe{
+        width: 300px;
+        max-width: 95%;
+        height: 200px;
+    }
+    div.tab-title{
+        /* flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px; */
+    }
+    div.tab-title h3{
+        /* width: 80%; */
+        font-size: 13px;
     }
 }
 

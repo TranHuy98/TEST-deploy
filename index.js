@@ -104,24 +104,27 @@ counters.forEach((counter) => {
 
 // mobi menu
 
-// document.getElementById('header-menu-button').onclick = () => {
-//     const menuMobi = document.getElementById('menu-mobi');
-//     if (menuMobi.style.display == 'none'){
-//         menuMobi.style.display = 'block';
-//     }
-//     else{
-//         menuMobi.style.display = 'none';
-//     }
-
-// }
-
 $('#header-menu-button').click(function(){
-    $('#menu-mobi').slideToggle();
+    if($('#menu-mobi').css('display') == 'none'){
+        $('#menu-mobi').slideDown(300);
+    }
+    else{
+        $('#menu-mobi').slideUp(300);
+    }
 });
 
 
 // mobi menu
-
+$('.menu-mobi-item').click(function(){
+    if($(this).find('.menu-mobi-child').css('display') == 'block'){
+        $(this).find('.menu-mobi-child').slideUp(300);
+    }
+    else{
+        $(this).parent().find('.menu-mobi-child').slideUp(300);
+        $(this).find('.menu-mobi-child').slideDown(300);
+    }
+    
+});
 
 
 
