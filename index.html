@@ -17,7 +17,8 @@
         />
         <!-- <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" /> -->
-        <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="./css/shared.css">
+        <link rel="stylesheet" href="./css/index.css" />
         <title>SUQ - Home</title>
     </head>
 
@@ -34,15 +35,17 @@
                 </div>
 
                 <ul id="header-menu">
-                    <li class="header-menu-item has-dropdown" id="test">
+                    <li class="header-menu-item has-dropdown">
                         Service
                     </li>
                     <li class="header-menu-item">
                         Career
                     </li>
-                    <li class="header-menu-item">
-                        About Us
-                    </li>
+                    <a href="./pages/about.html">
+                        <li class="header-menu-item">
+                            About Us
+                        </li>
+                    </a>
                     <li class="header-menu-item">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </li>
@@ -63,7 +66,7 @@
                     <div class="dropdown-detail">
                         <h3 class="dropdown-title">Services</h3>
                         <ul class="dropdown-list">
-                            <li><a href="./service.html">Business Technologies Consulting</a></li>
+                            <a href="./pages/service.html"><li>Business Technologies Consulting</li></a>
                             <li>Software Development</li>
                             <li>New Technologies</li>
                             <li>Mainternance and Support</li>
@@ -77,7 +80,7 @@
                 <li class="menu-mobi-item">
                     Service
                     <ul class="menu-mobi-child">
-                        <a href="./service.html"><li>Business Technologies Consulting</li></a>
+                        <a href="./pages/service.html"><li>Business Technologies Consulting</li></a>
                         <li>Software Development</li>
                         <li>New Technologies</li>
                         <li>Mainternance and Support</li>
@@ -86,7 +89,7 @@
                     <i class="fa-sharp fa-solid fa-angle-down mobi-dropdown-marker"></i>
                 </li>
                 <li class="menu-mobi-item">Career</li>
-                <li class="menu-mobi-item">About Us</li>
+                <a href="./pages/about.html"><li class="menu-mobi-item">About Us</li></a>
                 <li class="menu-mobi-item">Contact</li>
                 <li class="menu-mobi-item">
                     Language
@@ -508,5 +511,5 @@
         referrerpolicy="no-referrer"
     ></script>
     <!-- <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
 </html>

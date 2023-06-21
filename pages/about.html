@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,11 +15,11 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <!-- <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
-        <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" /> -->
-        <link rel="stylesheet" href="./shared.css" />
-        <title>Shared</title>
-    </head>
+        <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/shared.css" />
+        <link rel="stylesheet" href="../css/about.css">
+    <title>About</title>
 </head>
 <body id="wrapper">
     <!-- header -->
@@ -72,6 +71,88 @@
     </section>
 
     <!-- header -->
+
+    <section id="header" class="container-fluid">
+        <header class="container">
+            
+
+            <div>
+                <a href="../index.html"><img src="../assets/images/logo_suq.png" alt="" id="header-logo" /></a>
+            </div>
+
+            <ul id="header-menu">
+                <li class="header-menu-item has-dropdown">
+                    Service
+                </li>
+                <li class="header-menu-item">
+                    Career
+                </li>
+                <a href="./about.html">
+                    <li class="header-menu-item">
+                        About Us
+                    </li>
+                </a>
+                <li class="header-menu-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+
+                <button id="contact-button" class="btn-primary">Contact</button>
+
+                <li class="header-menu-item" class="language">EN <i class="fa-solid fa-angle-up"></i></li>
+            </ul>
+
+            <div id="header-menu-button"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        </header>
+
+        <div class="container-fluid" id="dropdown">
+            <div class="container dropdown-content">
+                <div class="dropdown-image">
+                    <img src="../assets/images/dropdown1.jpeg" alt="">
+                </div>
+                <div class="dropdown-detail">
+                    <h3 class="dropdown-title">Services</h3>
+                    <ul class="dropdown-list">
+                        <a href="./service.html"><li>Business Technologies Consulting</li></a>
+                        <li>Software Development</li>
+                        <li>New Technologies</li>
+                        <li>Mainternance and Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <ul id="menu-mobi">
+            <li class="menu-mobi-item">Search <span><i class="fa-solid fa-magnifying-glass mobi-search"></i></span></li>
+            <li class="menu-mobi-item">
+                Service
+                <ul class="menu-mobi-child">
+                    <a href="./service.html"><li>Business Technologies Consulting</li></a>
+                    <li>Software Development</li>
+                    <li>New Technologies</li>
+                    <li>Mainternance and Support</li>
+                </ul>
+
+                <i class="fa-sharp fa-solid fa-angle-down mobi-dropdown-marker"></i>
+            </li>
+            <li class="menu-mobi-item">Career</li>
+            <a href="./about.html"><li class="menu-mobi-item">About Us</li></a>
+            <li class="menu-mobi-item">Contact</li>
+            <li class="menu-mobi-item">
+                Language
+                <ul class="menu-mobi-child">
+                    <li>English</li>
+                    <li>Destusch</li>
+                </ul>
+
+                <i class="fa-sharp fa-solid fa-angle-down mobi-dropdown-marker"></i>
+            </li>
+        <ul>
+    </section>
+
+    <!-- header -->
+
+
+
     
     <!-- banner -->
     <section id="banner">
@@ -79,7 +160,7 @@
         <div class="slider">
 
             <div class="slider-item">
-                <img src="./assets/images/banner5.jpeg" alt="">
+                <img src="../assets/images/banner5.jpeg" alt="">
 
                 <div class="banner-info container-fluid">
                     <div class="container">
@@ -98,8 +179,21 @@
 
     <!-- banner -->
 
+    <!-- overview -->
+    <section id="overview" class="container-fluid">
+        <h1>OVERVIEW</h1>
 
+        <div class="overview-descripton">
+            <p>NTQ Solution is a Global IT Consulting & Software development company that embraces difficulty, creativity & unicity.</p>
 
+            <p>With a clear vision and passionate young workforce, NTQ has created a family atmosphere that allows the brightest minds to strive for technological perfection & audacious business ideas accomplishment.</p>
+
+            <p>To our honorable customers, NTQ stands for 'New Top Quality' since delivering the best product & service is always NTQ’s belief.</p>
+
+            <p>To our tech-savvy workforce, NTQ is 'NhaToi Quan' - which simply means:'My Family'.</p>
+        </div>
+    </section>
+    <!-- overview -->
 
 
 
@@ -107,7 +201,7 @@
     <footer class="container-fluid">
         <div class="container" id="footer">
             <div class="footer-left">
-                <a href="./index.html"><img src="./assets/images/logo_suq.png" alt=""></a>
+                <a href="../index.html"><img src="../assets/images/logo_suq.png" alt=""></a>
                 <p><i class="fa-solid fa-copyright"></i> 2023 SUQ Solution. All Rights Reserved.</p>
                 <p class="footer-logo-link"><i class="fa-brands fa-facebook-f"></i> <i class="fa-solid fa-envelope"></i></p>
             </div>
@@ -133,12 +227,13 @@
     <!-- footer -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    ></script>
-    <!-- <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
-    <script src="./index.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+<script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="../js/shared.js"></script>
+<script src="../js/about.js"></script>
 </html>

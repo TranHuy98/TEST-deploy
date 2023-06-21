@@ -1,20 +1,16 @@
-
-
-
 // //dropdown
 
-$('.has-dropdown').click(function () { 
-    if($('#dropdown').hasClass('dropdown-active')){
-        $('#dropdown').removeClass('dropdown-active');
+$('.has-dropdown').click(function(){
+    if($('#dropdown').css('display') == 'none'){
+        $('#dropdown').slideDown(300);
+        console.log('down');
     }
     else{
-        $('#dropdown').addClass('dropdown-active');
+        $('#dropdown').slideUp(300);
+        console.log('up');
     }
+    
 });
-
-
-
-
 
 // banner
 

@@ -198,7 +198,7 @@ div.benefit-right-image{
 
 /* contact */
 section#contact{
-    background: url(./assets/service/contact-bg.jpeg) no-repeat;
+    background: url(../assets/service/contact-bg.jpeg) no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 0 60px;
