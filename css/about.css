@@ -1,6 +1,229 @@
+
+h1{
+    color: #1668b2;
+}
+
 /* overview */
 section#overview{
     width: 100%;
-    
 }
 /* overview */
+
+section#overview p{
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+p.page-path{
+    text-align: left;
+    width: 100%;
+    color: #979797;
+    font-size: 18px !important;
+    margin: 0;
+}
+p.page-path i {
+    margin: 0 10px;
+}
+
+span.current-page{
+    color: #1668b2;
+}
+
+div.overview-card-list{
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+div.overview-card{
+    padding: 20px;
+    background: #FFF;
+    border-radius: 8px;
+    width: 24%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+div.overview-card img{
+    width: 64px;
+}
+div.overview-card h3.info{
+    font-size: 17px;
+    line-height: 1.1;
+}
+div.overview-card h3.info span{
+    font-size: 36px;
+    font-weight: bold;
+    color: #1668b2;
+}
+/* overview end */
+
+/* vision */
+section#vision{
+    margin: 40px 0 0;
+}
+div.vision-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+div.vision-content div.left{
+    width: 48%;
+}
+div.vision-content div.right{
+    width: 48%;
+}
+
+/* end vision */
+
+/* business phylosophy */
+section#business-phylosophy{
+    margin: 40px 0 0 ;
+}
+div.business-phylosophy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+div.business-phylosophy div.left{
+    width: 30%;
+    text-align: center;
+}
+div.business-phylosophy div.left img{
+    max-height: 400px;
+}
+div.business-phylosophy div.right{
+    width: 68%;
+}
+div.business-phylosophy div.right h1{
+    text-align: right;
+}
+div.business-phylosophy-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+div.business-phylosophy-item{
+    width: 30%;
+    
+}
+div.business-phylosophy-item p{
+    font-size: 24px;
+    font-weight: 500;
+}
+div.business-phylosophy-item h2{
+    font-size: 64px;
+    font-weight: bold;
+}
+div.business-phylosophy-item:nth-child(1) h2{
+    color: #8ac0f1;
+}
+div.business-phylosophy-item:nth-child(2) h2{
+    color: #4fa0e9;
+}
+div.business-phylosophy-item:nth-child(3) h2{
+    color: #1668b2;
+}
+/* end business phylosophy */
+
+/* manager */
+section#manager{
+    margin: 40px 0 0;
+    background: #FFF;
+    padding: 40px 0;
+}
+div.manager{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+div.manager-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+div.manager-card{
+    background: #F0F0F0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 24%;
+    height: 350px;
+    position: relative;
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+div.manager-card img.manager-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+div.manager-card:hover img.manager-image{
+    opacity: 1;
+}
+div.manager-card div.manager-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #FFF;
+    background: #1668b2;
+    padding: 16px;
+}
+div.manager-info span.name{
+    font-size: 21px;
+    font-weight: bold;
+}
+div.manager-info span.job{
+    font-size: 15px;
+}
+
+section#manage-detail{
+    padding: 20px 0;
+}
+div.manager-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+div.manager-detail div.left{
+    width: 25%;
+    text-align: center;
+}
+div.manager-detail div.right{
+    width: 70%;
+    padding: 40px 20px 20px;
+}
+div.manager-detail div.right p.name{
+    font-size: 48px;
+    color: #1668b2;
+}
+div.manager-detail div.right p.job{
+    margin: 6px 0 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+div.manager-detail div.right p.description{
+    margin: 0;
+    font-size: 17px;
+}
+/* manager */
