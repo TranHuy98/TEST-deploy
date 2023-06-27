@@ -196,8 +196,9 @@ div.manager-info span.job{
     font-size: 15px;
 }
 
-section#manage-detail{
+section#manager-detail{
     padding: 20px 0;
+    /* display: none; */
 }
 div.manager-detail{
     display: flex;
@@ -227,3 +228,39 @@ div.manager-detail div.right p.description{
     font-size: 17px;
 }
 /* manager */
+
+/* subscription */
+section#subsciption{
+    margin: 40px 0 0;
+    padding: 80px 0;
+    background: url(../assets/about/subscribe.jpeg) no-repeat;
+    background-position:  center;
+    background-size: cover;
+}
+div.subscription h1{
+    font-size: 48px;
+    color: #0cd4ef;
+    font-weight: bold;
+}
+div.subscription p{
+    font-size: 21px;
+    color: #FFF;
+    margin: 24px 0;
+}
+div.subscription input{
+    padding: 12px 20px;
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+div.subscription button{
+    padding: 11px 27px;
+    border: 1px solid #1668b2;
+    color: #1668b2;
+    font-size: 16px;
+    margin: 0 0 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* subscription */
