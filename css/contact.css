@@ -1,0 +1,187 @@
+h1{
+    color: #1668B2;
+}
+
+/* customer info */
+section#customer-info{
+    margin: 20px 0 0;
+}
+div.customer-info{
+    padding: 40px;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+input.info-field{
+    width: 47%;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+textarea.project-info{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+div.submit{
+    text-align: center;
+    width: 100%;
+}
+div.submit button{
+    border: 1px solid #1668b2;
+    color: #1668b2;
+    border-radius: 6px;
+    padding: 12px 50px;
+    background: #FFF;
+}
+
+
+/* customer info */
+
+/* sales */
+section#sales{
+    margin: 40px 0;
+}
+div.sales{
+    text-align: center;
+}
+div.sale-list{
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+div.sale-card{
+    box-shadow: 0 0 6px 2px #ccc;
+    border-radius: 6px;
+    padding: 15px 10px;
+    background: #FFF;
+    width: 23%;
+    min-height: 200px;
+}
+div.sale-card p.phone{
+    margin: 0;
+    font-size: 17px;
+}
+div.sale-card p.email{
+    color: #1668B2;
+    margin: 20px 0 15px;
+    font-weight: bold;
+}
+/* sales */
+
+
+/* office */
+section#office{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+section#office h1{
+    text-align: center;
+}
+div.offices-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+div.office-list-card{
+    width: 23%;
+    border-radius: 6px;
+    height: 350px;
+    background: url(../assets/images/office1.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+div.office-list-card:nth-child(2){
+    background: url(../assets/images/office2.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.office-list-card:nth-child(3){
+    background: url(../assets/images/office3.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.office-list-card:nth-child(4){
+    background: url(../assets/images/office4.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.office-list-card p{
+    margin: 0;
+    font-size: 15px;
+}
+div.office-list-card hr{
+    border-bottom: 2px solid #FFF;
+    width: 50px;
+    display: inline-block;
+}
+div.office-card-content{
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    transition: 0.3s;
+}
+div.office-list-card:hover div.office-card-content{
+    top: 0;
+    background: rgba(22, 104, 178, 0.7);
+}
+
+
+
+
+
+
+/* responsive */
+
+@media all and (max-width:992px){
+    
+    div.office-list-card{
+        width: 48%;
+    }
+    
+
+    /* menu mobi*/
+}
+
+@media all and (max-width:768px){
+    
+}
+
+@media all and (max-width: 576px){
+    div.office-list-card{
+        width: 100%;
+    }
+}
+
+/* responsive */

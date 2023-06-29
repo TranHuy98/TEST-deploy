@@ -1,0 +1,227 @@
+
+h2{
+    color: #185ccc;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* company story */
+section#company-story{
+    padding: 20px 0;
+}
+
+div.company-story h2{
+    color: #185ccc;
+    font-size: 36px;
+    margin: 0;
+}
+div.company-story-list{
+    margin: 40px 0 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+div.company-story-card{
+    width: 23%;
+    box-shadow: 0 0 6px 2px #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #FFF;
+    cursor: pointer;
+}
+div.company-story-card div.image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+div.company-story-card div.content{
+    padding: 10px 20px 30px;
+}
+div.company-story-card div.content p{
+    margin: 0;
+}
+div.company-story-card div.content p.title{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 12px 0;
+    overflow: hidden;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    color: #185ccc;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+div.company-story-card div.content p.detail{
+    overflow: hidden;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+/* company story */
+
+
+/* caring */
+section#caring{
+    margin: 20px 0;
+}
+div.caring{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+div.caring div.left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+div.caring div.left img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+div.caring div.right{
+    width: 60%;
+}
+
+div.caring div.right h2{
+    color: #185ccc;
+    font-size: 36px;
+    margin: 0;
+}
+div.caring div.right p.title{
+    margin: 20px 0;
+    background: linear-gradient(90deg,#0543a9,#00d8f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+    font-size: 28px;
+    border-radius: 6px;
+}
+div.caring-list{
+    margin: 0px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+div.caring-card{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 6px 2px #ccc;
+    border-radius: 6px;
+    background: #FFF;
+    cursor: pointer;
+    min-height: 150px;
+    padding: 10px;
+    text-align: center;
+}
+div.caring-card img{
+    height: 54px;
+    margin: 0 0 15px;
+}
+div.caring-card p{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+/* caring */
+
+
+/* partner % reward */
+section#partner-reward{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+div.partner-reward{
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+div.partner-reward h2{
+    min-height: 90px;
+}
+div.partner{
+    width: 49%;
+}
+
+div.partner-list{
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+div.partner-card{
+    width: 32%;
+    box-shadow: 0 0 6px 2px #ccc;
+    border-radius: 6px;
+    background: #FFF;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.partner-card img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div.reward{
+    width: 49%;
+}
+div.reward-list{
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+div.reward-card{
+    width: 32%;
+    box-shadow: 0 0 6px 2px #ccc;
+    border-radius: 6px;
+    background: #FFF;
+    height: 210px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+div.reward-card img{
+    height: 100px;
+}
+div.reward-card p.title{
+    font-size: 14px;
+    margin: 20px 0 0;
+}
+
+/* partner % reward */
